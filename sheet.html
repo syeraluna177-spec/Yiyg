@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Project - Spreadsheet</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+    --pink:#ff4f9a;
+    --pink-soft:#ffe0ef;
+    --pink-grad:linear-gradient(135deg,#ff69b4,#ff1493);
+    --text:#555;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,var(--pink-soft),#ffffff);
+}
+
+nav{
+    background:#ffffff;
+    padding:16px 28px;
+    text-align:center;
+    box-shadow:0 6px 18px rgba(255,105,180,.2);
+}
+
+nav a{
+    text-decoration:none;
+    color:var(--pink);
+    font-weight:600;
+    font-size:14px;
+}
+
+.container{
+    max-width:1000px;
+    margin:55px auto;
+    padding:0 20px;
+}
+
+/* HEADER */
+.header{
+    background:#ffffff;
+    padding:45px;
+    border-radius:26px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(255,105,180,.22);
+}
+
+.header h1{
+    color:var(--pink);
+    font-size:32px;
+    margin-bottom:12px;
+}
+
+.header p{
+    color:var(--text);
+    font-size:15px;
+    line-height:1.7;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+    margin-top:45px;
+}
+
+/* CARD */
+.card{
+    background:#ffffff;
+    padding:30px;
+    border-radius:22px;
+    box-shadow:0 10px 25px rgba(255,105,180,.18);
+    transition:.25s ease;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card h3{
+    color:var(--pink);
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#666;
+    font-size:14px;
+    margin-bottom:18px;
+}
+
+.card a{
+    text-decoration:none;
+    padding:10px 24px;
+    border-radius:22px;
+    background:var(--pink-grad);
+    color:white;
+    font-size:13px;
+    font-weight:600;
+    display:inline-block;
+}
+
+/* FOOT */
+.back{
+    text-align:center;
+    margin-top:45px;
+}
+
+.back a{
+    text-decoration:none;
+    padding:13px 36px;
+    border-radius:30px;
+    background:var(--pink-grad);
+    color:white;
+    font-size:14px;
+    font-weight:600;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="projects.html">← Kembali ke Projects</a>
+</nav>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Spreadsheet Management</h1>
+        <p>
+            Halaman ini berisi kumpulan spreadsheet yang digunakan
+            untuk dokumentasi, pencatatan data, dan laporan secara terorganisir.
+        </p>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>📋 Data Pendaftar</h3>
+            <p>Menyimpan data pendaftar secara rapi dan terstruktur.</p>
+            <a href="https://docs.google.com/spreadsheets/d/1QoHFtjNO-PdRnaRanQqcbAW1KSSppEPlk6ZekuWFQGU/edit?usp=drivesdk" target="_blank">Buka Spreadsheet</a>
+        </div>
+
+        <div class="card">
+            <h3>📝 Data Tugas</h3>
+            <p>Mencatat tugas dan status penyelesaian.</p>
+            <a href="https://docs.google.com/spreadsheets/d/1SlBnUYT7dK1TAaVoXku3guNTkxDqr_5-jID3dCZC7Qo/edit?usp=drivesdk" target="_blank">Buka Spreadsheet</a>
+        </div>
+
+        <div class="card">
+            <h3>📊 Rekap Laporan</h3>
+            <p>Rekap data laporan harian dan bulanan.</p>
+            <a href="https://docs.google.com/spreadsheets/d/1SlBnUYT7dK1TAaVoXku3guNTkxDqr_5-jID3dCZC7Qo/edit?usp=drivesdk" target="_blank">Buka Spreadsheet</a>
+        </div>
+
+        <div class="card">
+            <h3>📦 Inventaris</h3>
+            <p>Daftar inventaris dan data barang.</p>
+            <a href="https://docs.google.com/spreadsheets/d/1SlBnUYT7dK1TAaVoXku3guNTkxDqr_5-jID3dCZC7Qo/edit?usp=drivesdk" target="_blank">Buka Spreadsheet</a>
+        </div>
+
+    </div>
+
+    <div class="back">
+        <a href="projects.html">Selesai</a>
+    </div>
+
+</div>
+
+</body>
+</html>
